@@ -1,0 +1,53 @@
+html {
+    // Font-sizing
+    --font_-2: 12px;
+    --font_-1: 14px;
+    --font_0: 16px;
+    --font_1: 18px;
+    --font_2: 20px;
+    --font_3: 24px;
+    --font_4: 30px;
+    --font_5: 36px;
+    --font_6: 48px;
+    --font_7: 60px;
+    --font_8: 72px;
+    // Spacing
+    --spacing_-2: 4px;
+    --spacing_-1: 8px;
+    --spacing_0: 16px;
+    --spacing_1: 24px;
+    --spacing_2: 32px;
+    --spacing_3: 48px;
+    --spacing_4: 64px;
+    --spacing_5: 96px;
+    --spacing_6: 128px;
+    --spacing_7: 192px;
+    --spacing_8: 256px;
+    --spacing_9: 384px;
+    --spacing_10: 512px;
+    --spacing_11: 640px;
+    --spacing_12: 768px;
+    // Font-color
+    --font_dark: #5a5f58;
+    --font_medium: #767975;
+    --font_light: #a9aca8;
+    --font_lighter: #C7C7C7;
+    --app-color: #16A7C3;
+    //   --font_lighter: 1;
+    background: #E9FCD8;
+}
+
+input {
+    color: var(--font_dark);
+    padding: var(--spacing_0);
+    width: 200px;
+    border: 2px solid #16A7C3;;
+    font-size: var(--font_0);
+    &::placeholder{
+        color: var(--font_lighter);
+    }
+}
+
+div {
+    color: var(--font_medium);
+}
