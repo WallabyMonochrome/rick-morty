@@ -89,7 +89,7 @@ export default new Vuex.Store({
     },
     getOtherPage({ commit, state }) {
       commit('setLoader', true);
-      axios.get(`${baseUrl}?name=${state.searchValue}&page=${state.currentPage}`).then((resp) => {
+      axios.get(`${baseUrl}?name=${state.searchValue}&page=${state.currentPage}&status=${state.filtering === 'All' ? '' : state.filtering}`).then((resp) => {
         commit('setLoader', false);
         commit('setCharacters', resp.data.results);
       });
